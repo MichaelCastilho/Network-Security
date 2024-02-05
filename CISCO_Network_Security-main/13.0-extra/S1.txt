@@ -6,6 +6,11 @@
 !Inserir gateway
     ip default-gateway 192.168.3.1
 
+!Configurar o ip do cliente S3 em PC-A
+!Cliente name: S3
+!Cliente ip: 192.168.3.254
+!Secret: cisco
+
 !Habilitar AAA e conectar ao servidor
     aaa new-model
     aaa authentication dot1x default group radius
@@ -18,3 +23,7 @@ interface f0/18
      switchport mode access
       authentication port-control auto
       dot1x pae authenticator
+
+!Para corrigir
+!Criar um usuário em PC-A (teste/teste1245)
+!Ir no PC-C e configurar o usuário criado
