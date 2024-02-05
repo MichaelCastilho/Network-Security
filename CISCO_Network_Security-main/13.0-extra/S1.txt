@@ -1,3 +1,5 @@
+!Em PC-A Ativar Radius EAP
+
 !Inserir interface de gerenciamento
     interface vlan 1
      ip addr 192.168.3.254
