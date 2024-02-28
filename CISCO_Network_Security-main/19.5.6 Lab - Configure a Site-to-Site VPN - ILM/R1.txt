@@ -3,6 +3,8 @@
 !Utilize o Cisco Packet Tracer 8.2.1
 !Configuracoes do R1
 
+show version
+
 crypto isakmp enable
 
 crypto isakmp policy 10
