@@ -27,3 +27,7 @@ crypto map CMAP 10 ipsec-isakmp
 
 interface GigabitEthernet0/0/0
  crypto map CMAP
+
+!Verificar configurações
+show crypto ipsec sa
+show crypto isakmp sa 
