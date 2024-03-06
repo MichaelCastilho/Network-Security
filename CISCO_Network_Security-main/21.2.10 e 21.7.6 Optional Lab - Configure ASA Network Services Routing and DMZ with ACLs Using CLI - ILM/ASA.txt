@@ -20,6 +20,7 @@ interface g1/2
 
 route OUTSIDE 0.0.0.0 0.0.0.0 209.165.200.225
 
+!Regra de transição da INSIDE para NET (Externo)
 object network INSIDE-NET
  subnet 192.168.1.0 255.255.255.0
   nat (INSIDE,OUTSIDE) dynamic interface
