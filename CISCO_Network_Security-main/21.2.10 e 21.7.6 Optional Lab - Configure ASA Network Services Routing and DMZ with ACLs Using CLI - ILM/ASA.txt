@@ -4,7 +4,7 @@ domain-name netsec.com
 passwd cisco
 enable password cisco12345
 
-clock set 16:00:00 july 07 2021
+clock set 19:00:00 july 08 2024
 
 interface g1/1
  nameif OUTSIDE
