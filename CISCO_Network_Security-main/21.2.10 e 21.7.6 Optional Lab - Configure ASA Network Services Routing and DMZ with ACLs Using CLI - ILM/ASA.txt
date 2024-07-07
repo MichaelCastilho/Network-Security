@@ -34,6 +34,8 @@ policy-map security_policy
 no service-policy global_policy global
 service-policy security_policy global
 
+!Agora já é possível acessar o Server Internet a partir de PC-B
+
 dhcpd address 192.168.1.5-192.168.1.100 INSIDE
 dhcpd dns 209.165.201.2
 dhcpd option 3 ip 192.168.1.1
