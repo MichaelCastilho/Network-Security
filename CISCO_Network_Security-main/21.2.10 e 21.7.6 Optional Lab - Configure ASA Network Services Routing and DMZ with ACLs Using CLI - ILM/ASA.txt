@@ -65,6 +65,7 @@ interface g1/3
  security-level 70
  no shutdown 
 
+!Criar um NAT para o servidor DMZ
 object network DMZ-SERVER
  host 192.168.2.3
  nat (DMZ,OUTSIDE) static 209.165.200.227
