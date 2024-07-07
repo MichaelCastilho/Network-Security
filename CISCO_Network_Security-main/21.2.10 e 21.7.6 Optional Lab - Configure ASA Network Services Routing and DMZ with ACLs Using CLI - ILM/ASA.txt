@@ -39,6 +39,9 @@ dhcpd dns 209.165.201.2
 dhcpd option 3 ip 192.168.1.1
 dhcpd enable INSIDE
 
+!Em PC-B colocar ip via dhcp
+!No asa verifique com show dhcpd binding all os clientes dhcp
+
 username admin password cisco12345
 !aaa authentication ssh console LOCAL
 aaa authentication telnet console LOCAL
