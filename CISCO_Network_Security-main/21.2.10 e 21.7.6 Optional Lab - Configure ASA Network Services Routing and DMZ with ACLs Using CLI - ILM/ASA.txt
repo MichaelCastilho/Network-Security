@@ -73,5 +73,6 @@ object network DMZ-SERVER
 access-list OUTSIDE-DMZ permit ip any host 192.168.2.3
 access-group OUTSIDE-DMZ in interface OUTSIDE
 
+!O ping de PC-C para 209.165.200.227 já será possível
 
 
