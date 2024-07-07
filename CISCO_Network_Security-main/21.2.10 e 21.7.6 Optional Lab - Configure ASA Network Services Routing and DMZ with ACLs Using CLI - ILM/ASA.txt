@@ -18,6 +18,7 @@ interface g1/2
  security-level 100
  no shutdown
 
+!Início do lab 21.7.6
 route OUTSIDE 0.0.0.0 0.0.0.0 209.165.200.225
 
 !Regra de transição da INSIDE para NET (Externo)
