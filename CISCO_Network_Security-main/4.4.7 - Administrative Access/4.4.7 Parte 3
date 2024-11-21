@@ -1,0 +1,42 @@
+PARTE 3
+
+R1
+enable
+conf t
+username user01 secret user01pass
+line console 0
+login local
+username admin privilege 15 secret cisco12345
+ip domain-name netsec.com
+line vty 0 4
+privilege level 15
+login local
+transport input ssh
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+ip ssh time-out 90
+ip ssh authentication-retries 2
+
+
+PC-A
+ssh -l admin 192.168.1.1 (cisco12345)
+
+
+R3
+enable
+conf t
+username user01 secret user01pass
+line console 0
+login local
+username admin privilege 15 secret cisco12345
+ip domain-name netsec.com
+line vty 0 4
+privilege level 15
+login local
+transport input ssh
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+ip ssh time-out 90
+ip ssh authentication-retries 2
+
+

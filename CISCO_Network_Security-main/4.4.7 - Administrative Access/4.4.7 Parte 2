@@ -1,0 +1,27 @@
+PARTE 2
+
+R1
+enable
+conf t
+enable secret cisco12345
+security passwords min-length 10
+line console 0
+password ciscoconpass
+exec-timeout 5 0
+login
+logging synchronous
+line aux 0
+password ciscoauxpass
+exec-timeout 5 0
+login
+line vty 0 4 
+password ciscovtypass
+exec-timeout 5 0 
+transport input telnet
+login
+service password-encryption
+banner motd $Unauthorized access strictly prohibited!$
+
+R2
+enable
+telnet 10.1.1.1
