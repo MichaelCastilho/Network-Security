@@ -3,7 +3,7 @@
 !Utilize o Cisco Packet Tracer 8.2.1
 !Configuracoes do R1 - Criar Views
 !Depois de entrar na View Root com a senha cisco12345
-!Deve-se seguir a hierarquia, logo as view só são criadas após ativar o root
+!Deve-se seguir a hierarquia, logo as views só são criadas após ativar o root
 !O root vem com privilege 15
 
 enable view
