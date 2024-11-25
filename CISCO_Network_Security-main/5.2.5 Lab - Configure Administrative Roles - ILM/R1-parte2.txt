@@ -6,6 +6,7 @@
 !Deve-se seguir a hierarquia, logo as view só são criadas após ativar o root
 !O root vem com privilege 15
 
+enable view
 configure terminal
 
 !Criar view admin1 - Será criada com nível 0 de permissão.
