@@ -5,6 +5,7 @@
 
 username Admin1 secret admin1pa55
 
+!Ativa o AAA globalmente e cria lista default com base local
 aaa new-model
 aaa authentication login default local
 
@@ -17,9 +18,10 @@ exit
 ip domain-name netsec.com
 crypto key generate rsa general-keys modulus 1024
 
+!Criar lista chamada SSH-LOGIN com base de usuários local
 aaa authentication login SSH-LOGIN local
 
-
+!Ativa a lista SSH-LOGIN na line VTY para contabilidade
 line vty 0 4
 login authentication SSH-LOGIN
 transport input ssh
