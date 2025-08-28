@@ -30,6 +30,7 @@ policy-map security_policy
  class inspection_default
   inspect dns preset_dns_map
   inspect ftp
+  inspect http
   inspect icmp
    
 no service-policy global_policy global
